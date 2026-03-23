@@ -1,0 +1,18 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+p {
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Message {
+    display: flex;
+}

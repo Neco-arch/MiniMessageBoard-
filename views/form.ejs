@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Message Board</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form method="POST" action="/new">
+      <h2>Add New Post</h2>
+      <label>Author Name : <input name="AuthorName" type="text" required> </label>
+      <label class="Message">Massage : <textarea name="message" class="message_input" rows="4" cols="50" required placeholder="Type your message here..."></textarea></label>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
