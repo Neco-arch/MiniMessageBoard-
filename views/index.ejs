@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Message Board</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <h1><%= title %></h1>
@@ -14,12 +15,13 @@
             <div>
                 <h2>by <%= message.user %> <%= message.added %></h2>
                 <p><%= message.text %></p>
-                <input value="OpenDetail" type="button" data-idMassage=<%= index %>>
+                <input class="Button_Detail" value="OpenDetail" type="button" data-idMassage=<%= index %>>
             </div>
         <% }) %>
     </div>
 
     <h2>Add your own massage?</h2>
     <a href="new">Create Own post</a>
+    <script src="Controller.js"></script>
 </body>
 </html>

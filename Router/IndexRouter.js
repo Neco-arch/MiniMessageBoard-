@@ -1,5 +1,6 @@
 const Express = require('express')
 const Path = require('node:path');
+const { EventEmitter } = require('node:stream');
 const Routerapp = Express()
 const messages = [
   {
@@ -22,6 +23,12 @@ Routerapp.get("/" , (req , res) => {
 
 Routerapp.get("/new" , (req , res) => {
   res.render("form")
+})
+
+Routerapp.get("/detail/:id" , (req , res) => {
+  const detailid = req.params.id
+
+  res.render("detail" , {text : messages[detailid].text , date : messages[detailid].added , Author : messages[detailid].user} )
 })
 
 Routerapp.post("/new" , (req , res) => {

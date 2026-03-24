@@ -13,6 +13,7 @@ app.set("view engine" , "ejs")
 
 app.use("/" , IndexRouter)
 app.use("/new" , IndexRouter)
+app.use("/detail:id" , IndexRouter)
 
 app.listen(port , () => {
     console.log("server is running")
